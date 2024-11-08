@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="crud">
+
+        <div class="head">
+            <h2>AHMED Al Sayed</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+
+        <div class="inputs">
+        <input placeholder="title" type="text" id="title">
+   <div class="price">
+        <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+        <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+        <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+        <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+        <small id="total">32132</small>
+    </div>
+        <input placeholder="count" type="number" id="count">
+        <input placeholder="category" type="text" id="category">
+        <button id="submit">Create</button>
+
+        </div>
+
+
+
+
+        <div class="outputs">
+             <div class="searchBlock">
+              <input type="text" id="search" placeholder="Search">
+              <div class="btnSearch">
+                <button id="searchTitle">Search By Tital</button>
+                <button id="searchTCategory">Search By Category</button>
+
+              </div>
+
+
+
+             </div>
+
+
+         <table>
+             <tr>
+                 <th>id</th>
+                 <th>tital</th>
+                 <th>price</th>
+                 <th>taxes</th>
+                 <th>ads</th>
+                 <th>discount</th>
+                 <th>total</th>
+                 <th>update</th>
+                 <th>delete</th>
+             </tr>
+             <tbody id="tbody">
+             </tbody>
+             <tr>
+                <td></td>
+                <td>samsung</td>
+                <td>2000</td>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>2100</td>
+                <td>phone</td>
+                <td><button id ="update">update</button></td>
+                <td><button id ="delete">delete</button></td>
+            
+            </tr>
+         </table>
+        </div>
+
+
+
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

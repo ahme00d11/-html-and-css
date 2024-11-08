@@ -1,0 +1,228 @@
+
+.num2{
+    color: white;
+    position: absolute;
+    left: 179px;
+    top: 70px;cursor: pointer;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 30px;
+    width: 40px;
+background-color: black;
+
+}
+.num3{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    left: 220px;
+    top: 70px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 30px;
+    width: 40px;
+    background-color: black;
+
+
+}
+.num4
+{
+    color: white;
+    position: absolute;
+    left: 99px;
+    top: 101px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 40px;cursor: pointer;
+    background-color: black;
+}
+.num5{
+    color: white;
+    position: absolute;
+    left: 140px;
+    top: 101px;
+    text-align: center;
+    border:  solid black ;
+    height: 31px;
+    width: 38px;cursor: pointer;
+    background-color: black;
+
+}
+.num6{
+    color: white;
+    position: absolute;
+    left: 179px;
+    top: 101px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 40px;cursor: pointer;
+    background-color: black;
+}
+.num7{
+    color: white;
+    position: absolute;
+    left: 220px;
+    top: 101px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 40px;cursor: pointer;
+    background-color: black;
+}
+.num8{
+    color: white;
+    position: absolute;
+    left: 99px;
+    top: 133px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 40px;cursor: pointer;
+    background-color: black;
+}
+.num9{
+    color: white;
+    position: absolute;
+    left: 140px;
+    top: 133px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 38px;cursor: pointer;
+    background-color: black;
+}
+.num10{color: white;
+
+    position: absolute;
+    left: 179px;
+    top: 133px;
+    text-align: center;
+    border:  solid 1px black  ;
+    height: 31px;cursor: pointer;
+    width: 40px; background-color: black;
+}
+
+.num11{
+    color: white;
+    position: absolute;
+    left: 220px;
+    top: 133px;
+    text-align: center;
+    cursor: pointer;
+    border: solid 1px black  ;
+    height: 63px;
+    width: 40px; background-color: black;
+}
+.num12{
+    color: white;
+    position: absolute;
+    left: 99px;
+    top: 165px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;cursor: pointer;
+    width: 40px; background-color: black;
+}
+.num13{color: white;
+    position: absolute;
+    left: 140px;
+    top: 165px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 38px; background-color: black;
+    cursor: pointer;
+}
+.num14{color: white;
+    position: absolute;
+    left: 179px;
+    top: 165px;
+    text-align: center;
+    border:  solid 1px black  ;
+    height: 31px;
+    width: 40px;
+    background-color: black;cursor: pointer;
+}
+.num15{color: white;
+    position: absolute;
+    left: 99px;
+    top: 197px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 40px; background-color: black;
+    cursor: pointer;
+}
+.num16{color: white;
+    position: absolute;
+    left: 140px;
+    top: 197px;
+    text-align: center;
+    border:  solid 1px black  ;
+    height: 31px;
+    width: 38px; background-color: black;
+    cursor: pointer;
+}
+.num17{color: white;
+    position: absolute;
+    left: 179px;
+    top: 197px;
+    text-align: center;
+    border:  solid 1px black ;
+    height: 31px;
+    width: 40px;  cursor: pointer;
+    background-color: black;
+}
+.num18{color: white;
+    background: orangered;
+    position: absolute;
+    left: 220px;
+    top: 197px;
+    text-align: center;
+    border:  solid 1px orangered ;
+    height: 31px;
+    width: 40px;  cursor: pointer;
+
+}
+.num{
+    background: white;
+    position: absolute;
+    left: 99px;
+    top: 20px;
+    text-align: center;
+    border:  solid 6px white ;
+    height: 38px;
+    width: 151px;
+
+}
+body{
+    background: rgb(58, 52, 52);
+}.num1{
+    color: white;
+position: absolute;
+left: 99px;
+top: 70px;
+text-align: center;
+border:  solid 5px rgb(0, 0, 0) ;
+height: 27px;
+width: 79px;
+background-color: orangered;  cursor: pointer;
+}
+.num{
+    background: white;
+    position: absolute;
+    left: 99px;
+    top: 20px;
+    text-align: center;
+    border:  solid 6px black ;
+    height: 38px;
+    width: 151px;
+
+}
+span:hover
+{
+background: rgb(255, 255, 255);
+color: black;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>< %= title%></title>
+</head>
+<body>
+    <div>
+        <a href="/">home</a>  
+        <a href="/users/add">add new user</a>
+        <a href="/users">all users list</a>
+    </div>
+    <h1><%= title %></h1>
+    <% if(messages.error) { %>
+        <p style="color: red;"><%- messages.error%></p>
+
+    <% } %>
+
+    <% if (messages.success){ %>
+        <p style="color: green;"><%- messages.success%></p>
+
+    <% } %>
+    <form action="/users/edit" method="post" name="form1">
+        <table>
+            <tr>
+                <td>name</td>
+                <td><input type="text" name="name" id="name" value="<%= name%>"></td>
+            </tr>
+            <tr>
+                <td>age</td>
+                <td><input type="text" name="age"  value="<%= age%>"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email"  value="<%= email%>"></td>
+            </tr>
+            <td></td>
+            <td><input type="submit" name="submit" value="edit"></td>
+            </tr>
+
+        </table>
+        <input type="hidden" name="_method" value="PUT">
+    </form>
+  
+</body>
+</html>

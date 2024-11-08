@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHMED AL SAYED</title>
+    <style>
+      div{
+       
+        text-align: center;
+        
+      }
+      
+      #stopwatch{
+        text-align: center;
+      width: 1000px;
+        font-size:550%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+      }
+      .timer-display{
+        width: 1000px;
+        font-size: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translate(-50% , 50%);
+        
+      
+      }
+      body{
+        height: 100vh;
+        background:linear-gradient( rgba(255, 0, 0, 0.688), #6a21e0,rgba(255, 0, 191, 0.715));
+        
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      #start{
+        
+        width: 130px;
+        font-size: 100%;
+        font-weight: 600;
+        position: absolute;
+        top: 66%;
+        left: 25%;
+        transform: translate(-50% , 50%);
+      
+      color: rgb(255, 255, 255);
+        cursor: pointer;
+       
+        height: 55px;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+      
+      }
+      #stop{
+        
+        width: 130px;
+        font-size: 16px;
+        font-weight: 600;
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50% , 50%);
+      color: rgb(255, 255, 255);
+        cursor: pointer;
+        height: 55px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+      
+      }
+      #stop:hover{
+        background-position: 100% 0;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+      }
+      #start:hover{
+        background-position: 100% 0;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+      }
+      #reset {
+          width: 130px;
+          font-size: 16px;
+          font-weight: 600;
+          position: absolute;
+          top: 66%;
+          left: 75%;
+          right: 25%;
+          transform: translate(-50% , 50%);
+        
+        color: rgb(255, 255, 255);
+          cursor: pointer;
+          height: 55px;
+          text-align:center;
+          border: none;
+          background-size: 300% 100%;
+          border-radius: 50px;
+          -o-transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+        }
+        
+        #reset:hover {
+          background-position: 100% 0;
+          -o-transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+        }
+        
+        #reset:focus {
+          outline: none;
+        }
+        #stop:focus {
+          outline: none;
+        }
+        
+        #reset {
+          background-image: linear-gradient(
+            to right,
+            #009245,
+            #fcee21,
+            #00a8c5,
+            #d9e021
+          );
+          box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+        }
+        
+        #stop{
+          background-image: linear-gradient(
+            to right,
+            #920000,
+            #d721fc,
+            #c50000,
+            #6a21e0
+          );
+          box-shadow: 0 4px 15px 0 rgba(181, 134, 15, 0.75);
+        }
+        #start{ background-image: linear-gradient(
+          to right,
+          #1500ff,
+          #000000,
+          #15d6e4,
+          orange
+      
+          );
+        box-shadow: 0 4px 15px 0 rgba(181, 134, 15, 0.75);}
+        #start:focus {
+          outline: none;
+        }
+      </style>
+</head>
+<body>
+     <span id="stopwatch">STOP WATCH</span>
+     <div class="timer-display">
+          00 : 00 : 000
+    </div>
+   <button id="start">start</button>
+   <button id="stop">stop</button>
+   <button id="reset">reset</button>
+    </div> 
+    <div class="">
+   
+   
+   <script>let [milliseconds, seconds, minutes] = [0, 0, 0];
+    let timeRef = document.querySelector(".timer-display");
+    let int = null;
+    
+    document.getElementById("start").addEventListener("click", () => {
+        if(int !== null) {
+            clearInterval(int);
+        }
+        int = setInterval(displayTimer, 10);
+    });
+    
+    document.getElementById("stop").addEventListener("click", () => {
+        clearInterval(int);
+    });
+    
+    document.getElementById("reset").addEventListener("click", () => {
+        clearInterval(int);
+        [milliseconds, seconds, minutes] = [0, 0, 0];
+        timeRef.innerHTML = " 00 : 00 : 000 ";
+    }); 
+    
+    function displayTimer() {
+        milliseconds += 10;
+        if(milliseconds == 1000) {
+            milliseconds = 0;
+            seconds++;
+            if(seconds == 60) {
+                seconds = 0;
+                minutes++;
+              
+            }
+        }
+    
+        let m = minutes < 50 ? "0" + minutes : minutes;
+        let s = seconds < 10 ? "0" + seconds : seconds;
+        let ms = 
+            milliseconds < 10
+            ? "00" + milliseconds
+            : milliseconds < 100
+            ? "0" + milliseconds
+            : milliseconds;
+    
+        timeRef.innerHTML = `${m} : ${s} : ${ms}`
+    }</script>
+</body>
+</html>

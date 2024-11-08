@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clock</title>
+    
+</head>
+<body>
+
+   
+<div class="mohamed"></div>
+<div class="mohamed2">
+
+<li class="number"><span>1</span></li>
+<li class="number"><span>2</span></li>
+<li class="number"><span>3</span></li>
+<li class="number"><span>4</span></li>
+<li class="number"><span>5</span></li>
+<li class="number"><span>6</span></li>
+<li class="number"><span>7</span></li>
+<li class="number"><span>8</span></li>
+<li class="number"><span>9</span></li>
+<li class="number"><span>10</span></li>
+<li class="number"><span>11</span></li>
+<li class="number"><span>12</span></li>
+
+<div class="second-hand"></div>
+<div class="minute-hand"></div>
+<div class="hour-hand"></div>
+<div class="u"></div>
+
+
+
+</div>
+
+
+
+
+<div class="center-dot"></div>
+<script type="text/javascript" src="asd.js"></script>
+</body>
+</html>
+<style>
+    @keyframes rotate {
+0%{
+filter: hue-rotate(0deg);
+}
+
+
+100%{
+filter: hue-rotate(360deg);
+}
+}
+
+
+
+
+
+
+body{
+    background-image:url(398660285_1027261101951200_5457495101614912782_n\ \(2\).jpg) ;
+    background-size: cover;
+ 
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+.mohamed
+{
+background: linear-gradient(purple,red,yellow,purple,orangered);
+position: absolute;
+width: 415px;
+height: 415px;
+border-radius: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+box-shadow: 0px 0px 30px 9px cyan ;
+border: 1px solid cyan;
+animation: rotate 1.5s linear infinite;
+
+}
+.mohamed2
+{
+background-color: rgb(6,51,51);
+border-radius: 100%; 
+border:solid 7px ;
+width: 370px;
+height: 370px;
+position: absolute;
+top: 50%;
+left: 50%;
+box-shadow: inset 0 5px 25px black;
+transform: translate(-50%,-50%);
+}
+.center-dot{
+background: orangered;
+animation: rotate 1.5s linear infinite;
+
+width: 16px;
+height: 16px;
+border-radius: 50%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+
+}
+.number{
+position:absolute;
+width: 100%;
+height: 100%;
+text-align: center;
+color: rgb(97, 94, 103);
+
+}
+.number span{
+display: block;
+color: black;
+font-size: 30px;
+padding:4px ;
+text-align: center;
+color: white;
+
+
+}
+.number:nth-child(1){
+transform:rotate(30deg) 
+}
+
+.number:nth-child(2){
+transform:rotate(60deg) 
+}
+.number:nth-child(3){
+    transform:rotate(90deg) 
+    }
+    .number:nth-child(4){
+        transform:rotate(120deg) 
+        }.number:nth-child(5){
+            transform:rotate(150deg) 
+            }.number:nth-child(6){
+                transform:rotate(180deg) 
+                }.number:nth-child(7){
+                    transform:rotate(210deg) 
+                    }.number:nth-child(8){
+                        transform:rotate(240deg) 
+                        }.number:nth-child(9){
+                            transform:rotate(270deg) 
+                            }.number:nth-child(10){
+                                transform:rotate(300deg) 
+                                }.number:nth-child(11){
+                                    transform:rotate(330deg) 
+                                    }.number:nth-child(12){
+                                        transform:rotate(360deg) 
+                                        }
+
+.number:nth-child(1) span{
+    transform:rotate(-30deg) 
+    }
+    
+.number:nth-child(2) span{
+transform:rotate(-60deg) 
+}
+
+
+.number:nth-child(3) span{
+transform:rotate(-90deg) 
+}
+
+
+.number:nth-child(4) span{
+transform:rotate(-120deg) 
+}
+
+
+.number:nth-child(5) span{
+transform:rotate(-150deg) 
+}
+
+
+.number:nth-child(6) span{
+transform:rotate(-180deg) 
+}
+
+
+.number:nth-child(7) span{
+transform:rotate(-210deg) 
+}
+
+
+.number:nth-child(8) span{
+transform:rotate(-240deg) 
+}
+
+
+.number:nth-child(9) span{
+transform:rotate(-270deg) 
+}
+
+
+.number:nth-child(10) span{
+transform:rotate(-300deg) 
+}
+
+
+.number:nth-child(11) span{
+transform:rotate(-330deg) 
+}
+
+
+.number:nth-child(12) span{
+transform:rotate(-360deg) 
+}
+
+.second-hand{
+    width: 2px;
+    height: 120px;
+    border-radius: 1000px;
+    background: orangered;
+    position: absolute;
+    left: 184px;
+    top: 60px;
+   
+    animation: rotate 1.5s linear infinite;
+}
+.minute-hand{
+    width: 6px;
+    height: 110px;
+    border-radius: 1000px;
+    background: rgb(157, 255, 0);
+    position: absolute;
+    left: 182px;
+    top:75px;
+    
+    animation: rotate 1.5s linear infinite;
+
+
+
+}
+
+
+.hour-hand{
+    width: 8px;
+    height: 90px;
+    border-radius: 1000px;
+    background:white;
+    position: absolute;
+    left: 181px;
+    top:103px;
+   
+    box-shadow: 1px 1px 150px 50px rgb(13, 0, 255) ;
+
+}
+
+.u{
+
+height: 0;
+width: 0;
+position: absolute;
+left: 181px;
+top: 53px;
+border: 5px solid  hidden;
+border-bottom: 11px solid orangered;
+border-left: 5px solid transparent ;
+border-right: 4px solid transparent;
+transform: rotate(358deg);
+position: absolute;
+
+animation: rotate 1.5s linear infinite;
+
+
+
+}
+
+</style>
+
